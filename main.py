@@ -37,3 +37,10 @@ class PlayingCardDataset(Dataset):
 
 
 dataset = PlayingCardDataset(data_dir='archive/train')
+print(len(dataset))
+image, label = dataset[6000]
+print(label)
+print(image)
+data_dir = 'archive/train'
+target_to_class = {v: k for k, v in ImageFolder(data_dir).class_to_idx.items()}
+print(target_to_class)
