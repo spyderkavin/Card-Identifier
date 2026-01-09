@@ -53,7 +53,7 @@ dataset = PlayingCardDataset(data_dir, transform)
 image, label = dataset[100]
 print(image.shape)
 
-for image, label in dataset:
+for images, label in dataset:
     print("through dataset :)")
     break
 
