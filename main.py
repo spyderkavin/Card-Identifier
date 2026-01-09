@@ -44,3 +44,8 @@ print(image)
 data_dir = 'archive/train'
 target_to_class = {v: k for k, v in ImageFolder(data_dir).class_to_idx.items()}
 print(target_to_class)
+
+transform = transforms.Compose([transforms.Resize((128, 128)),transforms.ToTensor()])
+
+data_dir = 'archive/train'
+dataset = PlayingCardDataset(data_dir, transform)
