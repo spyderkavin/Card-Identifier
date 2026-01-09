@@ -59,8 +59,9 @@ for images, label in dataset:
 
 dataloader = DataLoader(dataset, batch_size=32, shuffle=True)
 
-for image, label in dataset:
+for image, labels in dataset:
     print("through dataset :)")
     break
 
-print(images.shape)
+print(f"images.shape --->  {images.shape} labels.shape --> {labels.shape}")
+
