@@ -63,4 +63,4 @@ for image, label in dataset:
     print("through dataset :)")
     break
 
-print(images)
+print(images.shape)
