@@ -65,3 +65,4 @@ for image, labels in dataset:
 
 print(f"images.shape --->  {images.shape} labels.shape --> {labels.shape}")
 
+
