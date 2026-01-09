@@ -49,3 +49,10 @@ transform = transforms.Compose([transforms.Resize((128, 128)),transforms.ToTenso
 
 data_dir = 'archive/train'
 dataset = PlayingCardDataset(data_dir, transform)
+
+image, label = dataset[100]
+print(image.shape)
+
+for image, label in dataset:
+    print("through dataset :)")
+    break
